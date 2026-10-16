@@ -10,7 +10,7 @@
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.6;padding-bottom:76px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.6;padding-bottom:0}
 @media (min-width:900px){body{padding-bottom:0}}
 img{max-width:100%;height:auto;display:block}
 a{color:var(--amber)}
@@ -46,7 +46,7 @@ p{margin:0 0 1em}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(246,180,14,.5)}70%{box-shadow:0 0 0 16px rgba(246,180,14,0)}100%{box-shadow:0 0 0 0 rgba(246,180,14,0)}}
 
 /* Header */
-.site-header{position:sticky;top:0;z-index:50;background:rgba(17,18,20,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-header{position:relative;z-index:50;background:rgba(17,18,20,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .header-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
 .brand{display:flex;align-items:center;text-decoration:none}
 .brand img{height:50px;width:auto}
@@ -307,7 +307,7 @@ p{margin:0 0 1em}
 .sos-fab:focus-visible{outline:none}.sos-fab:focus-visible .sos-ic{outline:3px solid #fff;outline-offset:3px}
 @media (max-width:899px){
  /* sits just above the sticky call bar, never on top of it */
- .sos-fab{right:14px;bottom:calc(86px + env(safe-area-inset-bottom))}
+ .sos-fab{right:14px;bottom:calc(16px + env(safe-area-inset-bottom))}
  .sos-ic{width:56px;height:56px}
  .sos-label{margin-right:-28px;padding:7px 38px 7px 14px;font-size:.85rem}
  .sos-label small{font-size:.66rem}
@@ -390,7 +390,7 @@ p{margin:0 0 1em}
 /* Mobile: the emergency button docks into the sticky call bar so it never covers page content */
 @media (max-width:899px){
  .call-bar{padding-right:78px}
- .sos-fab{right:12px;bottom:calc(9px + env(safe-area-inset-bottom));animation-name:sos-drift-sm}
+ .sos-fab{right:12px;bottom:calc(14px + env(safe-area-inset-bottom));animation-name:sos-drift-sm}
  .sos-ic{width:54px;height:54px}
  .sos-label{display:none}
 }
