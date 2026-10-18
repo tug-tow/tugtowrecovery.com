@@ -421,3 +421,27 @@ p{margin:0 0 1em}
 /* photo credits (CC BY / BY-SA attribution) */
 .photo-credits{display:block;margin-top:6px;font-size:.78rem;opacity:.8;line-height:1.5}
 .photo-credits a{color:inherit;text-decoration:underline}
+
+/* ===== Town landing pages (Sandy, Bedford, St Neots) ===== */
+.town-hero h1{margin-top:14px}
+.town-hero h1 span{display:block;color:var(--amber);font-size:.62em;margin-top:.15em}
+.crumbs{font-size:.88rem;color:var(--muted);margin-bottom:14px}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--amber)}
+.crumbs [aria-current]{color:var(--text);font-weight:600}
+.town-svc .svc{position:relative;padding-left:66px}
+.town-svc .svc-ic{position:absolute;left:16px;top:18px;width:36px;height:36px;padding:8px;border-radius:50%;background:rgba(246,180,14,.14);color:var(--amber)}
+.local-card h3{display:flex;gap:12px;align-items:center}
+.local-card h3 .icon{flex:none;width:40px;height:40px;padding:9px;border-radius:10px;background:var(--amber);color:var(--on-amber)}
+.local-card p{color:var(--muted);margin:0}
+.chips--links a{display:flex;align-items:center;gap:6px;color:var(--amber);text-decoration:none}
+.chips--links li:has(a){border-color:rgba(246,180,14,.55)}
+.town-links{display:grid;gap:12px;margin:22px 0 26px}
+@media (min-width:760px){.town-links{grid-template-columns:repeat(3,1fr)}}
+.town-link{display:flex;align-items:center;gap:12px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:10px;color:var(--text);text-decoration:none;transition:border-color .2s ease,transform .2s ease}
+.town-link>.icon:first-child{flex:none;width:22px;height:22px;color:var(--amber)}
+.town-link>.icon:last-child{flex:none;margin-left:auto;width:20px;height:20px;color:var(--amber)}
+.town-link strong{display:block;font-family:var(--font-head);text-transform:uppercase;letter-spacing:.04em;font-size:1.05rem}
+.town-link small{display:block;color:var(--muted);font-size:.88rem}
+.town-link:hover{border-color:var(--amber);transform:translateY(-2px)}
+.town-band{padding:64px 0}
