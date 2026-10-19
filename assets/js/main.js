@@ -115,8 +115,8 @@
     breakdown: ['Broken down? Flat battery, flat tyre, locked out or won\'t start, we come to you and either get you going or get the vehicle moved.', 'services.html#breakdown', 'Breakdown help'],
     accident: ['If anyone is hurt, or you\'re in a dangerous spot on a live carriageway, call 999 first. Then call us for accident recovery, day or night.', 'services.html#recovery', 'Accident recovery'],
     delivery: ['Need a car or van moved? We collect and deliver anywhere in the UK, for sales, auctions, garages and moves.', 'services.html#transport', 'Delivery & transport'],
-    unwanted: ['Got a car or van you no longer want? We collect it free of charge and make sure it\'s recycled properly and taken out of your name.', 'free-vehicle-collection.html', 'Free vehicle collection'],
-    sell: ['Thinking of selling? We buy all vehicles, including classics and ones that failed their MOT but still have value.', 'we-buy-any-vehicle.html', 'We buy any vehicle']
+    unwanted: ['Any unwanted vehicles removed. Please call for more information.', 'free-vehicle-collection.html', 'Unwanted vehicles removed'],
+    sell: ['We buy cars, vans and bikes. Call for more information.', 'we-buy-any-vehicle.html', 'We buy cars, vans & bikes']
   };
   var panel = document.getElementById('pick-panel');
   if (panel) {
@@ -129,7 +129,7 @@
         e.preventDefault();
         btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
         txt.textContent = v[0]; more.setAttribute('href', v[1]); more.textContent = v[2] + ' →';
-        call.lastChild.textContent = k === 'sell' ? 'Call 07866 000888 for an offer' : k === 'unwanted' ? 'Call 07866 000888 to book' : 'Call 07866 000888';
+        call.lastChild.textContent = k === 'sell' || k === 'unwanted' ? 'Call 07866 000888 for more information' : 'Call 07866 000888';
         panel.hidden = false;
         panel.style.animation = 'none'; void panel.offsetWidth; panel.style.animation = '';
       });

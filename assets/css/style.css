@@ -445,3 +445,15 @@ p{margin:0 0 1em}
 .town-link small{display:block;color:var(--muted);font-size:.88rem}
 .town-link:hover{border-color:var(--amber);transform:translateY(-2px)}
 .town-band{padding:64px 0}
+
+/* privacy page */
+.legal{max-width:820px}
+.legal h2{font-size:clamp(1.4rem,3vw,2rem);margin-top:1.6em;color:var(--text)}
+.legal h3{margin-top:1.4em;color:var(--amber)}
+.legal p,.legal li{color:#d5d7db}
+.legal ul{padding-left:1.2em}
+.legal li{margin:.25em 0}
+.table-scroll{overflow-x:auto;margin:1em 0}
+.legal-table{border-collapse:collapse;width:100%;background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+.legal-table th,.legal-table td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.legal-table th{font-family:var(--font-head);text-transform:uppercase;letter-spacing:.06em;font-size:.9rem;color:var(--amber)}
