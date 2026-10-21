@@ -114,7 +114,7 @@
   var PICK = {
     breakdown: ['Broken down? Flat battery, flat tyre, locked out or won\'t start, we come to you and either get you going or get the vehicle moved.', 'services.html#breakdown', 'Breakdown help'],
     accident: ['If anyone is hurt, or you\'re in a dangerous spot on a live carriageway, call 999 first. Then call us for accident recovery, day or night.', 'services.html#recovery', 'Accident recovery'],
-    delivery: ['Need a car or van moved? We collect and deliver anywhere in the UK, for sales, auctions, garages and moves.', 'services.html#transport', 'Delivery & transport'],
+    delivery: ['Need a car or van moved? We collect and deliver around Sandy and Bedfordshire, for sales, auctions, garages and moves.', 'services.html#transport', 'Delivery & transport'],
     unwanted: ['Any unwanted vehicles removed. Please call for more information.', 'free-vehicle-collection.html', 'Unwanted vehicles removed'],
     sell: ['We buy cars, vans and bikes. Call for more information.', 'we-buy-any-vehicle.html', 'We buy cars, vans & bikes']
   };
